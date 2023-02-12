@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>BYThemes</title>
+     <!-- Bootstrap css -->
+     <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+     <!-- Fontawesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- My custom css -->
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/project.css">
+</head>
+
+<body>
+
+     <!-- Main Content -->
+     <section class="main-content light-mode" id="mainContent">
+
+          <!-- Preloader -->
+          <div class="preload-section">
+               <div class="preloader">
+                    <div class="item item-1"></div>
+                    <div class="item item-2"></div>
+                    <div class="item item-3"></div>
+                    <div class="item item-4"></div>
+               </div>
+          </div>
+          <!-- Preloader end -->
+
+          <!-- Top Part -->
+          <div class="top-part">
+               <div class="container">
+                    <div class="row">
+                         <div class="col-5 number-part">
+                              <i class="fa-solid fa-phone"></i>
+                              <span>+88 01234 56789</span>
+                         </div>
+
+                         <div class="col-7 text-end">
+                              <a href=""><i class="fa-brands fa-facebook"></i></a>
+                              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                              <a href=""><i class="fa-brands fa-twitter"></i></a>
+                              <a href=""><i class="fa-brands fa-youtube"></i></a>
+                              <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                              <div class="mode">
+                                   <input type="checkbox" class="checkbox" id="modeChange" />
+                                   <label class="label" for="modeChange">
+                                        <i class="fas fa-sun"></i>
+                                        <i class="fas fa-moon"></i>
+                                        <div class="ball"></div>
+                                   </label>
+                              </div>
+                         </div>
+
+                    </div>
+               </div>
+          </div>
+          <!-- Top part end -->
+
+          <!-- Navbar start-->
+          <div class="nav-section text-center" id="home">
+               <div class="my-navbar">
+                    <nav class="navbar navbar-expand-lg" id="main-navbar">
+                         <div class="container">
+                              <a class="navbar-brand" href="index.html">
+                                   <h1>BYThemes</h1>
+                              </a>
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+                                   aria-expanded="false" aria-label="Toggle navigation">
+                                   <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                                   <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                             <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                             <a class="nav-link" href="about.html">About Us</a>
+                                        </li>
+                                        <li class="nav-item">
+                                             <a class="nav-link active" href="project.html">Projects</a>
+                                        </li>
+                                        <li class="nav-item">
+                                             <a class="nav-link" href="career.html">Career</a>
+                                        </li>
+                                        <li class="nav-item">
+                                             <a class="nav-link" href="contact.html">Contact us</a>
+                                        </li>
+                                   </ul>
+                              </div>
+                         </div>
+                    </nav>
+               </div>
+          </div>
+          <!-- Navbar end -->
+
+          <!-- Top section start-->
+          <div class="top-section">
+               <h1>Our Projects</h1>
+          </div>
+          <!-- Top section end -->
+
+
+          <!-- filter section start-->
+          <div class="filter-section">
+               <div class="container">
+                    <div class="filter-item">
+                         <h5>Filter Project</h5>
+                         <form action="">
+                              <select name="status" id="status">
+                                   <option value="-1" disabled selected>Status</option>
+                                   <option value="Ongoing">Ongoing</option>
+                                   <option value="Upcoming">Upcoming</option>
+                                   <option value="Land">Land</option>
+                              </select>
+                              <select name="type" id="type">
+                                   <option value="-1" disabled selected>Type</option>
+                                   <option value="Residential">Residential</option>
+                                   <option value="Commercial">Commercial</option>
+                                   <option value="Other">Other</option>
+                              </select>
+
+                              <select name="location" id="location">
+                                   <option value="-1" disabled selected>Location</option>
+                                   <option value="Dhaka">Dhaka</option>
+                                   <option value="Chattagram">Chattagram</option>
+                                   <option value="Sylhet">Sylhet</option>
+                              </select>
+                         </form>
+                    </div>
+               </div>
+          </div>
+          <!-- Filter Section End -->
+
+          <!-- Project Section Start-->
+          <div class="project-section" id="project">
+               <div class="container">
+                    <h1>Our Projects</h1>
+
+                    <div class="select-view">
+                         <select name="selectView" id="selectView" onchange="changeView()">
+                              <option value="grid-view">Grid View</option>
+                              <option value="list-view">List View</option>
+                         </select>
+                    </div>
+
+                    <div class="row" id="grid-view">
+                         <div class="col-xl-3 col-md-6 col-12">
+                              <a href="details.html">
+                                   <div class="project-card">
+                                        <div class="project-overlay"></div>
+                                        <img class="project-image" src="images/project/02.jpg">
+                                        <div class="project-details fadeIn-bottom">
+                                             <h3 class="project-title">Swiss Tower</h3>
+                                             <p class="project-text">Mirpur</p>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+
+                         <div class="col-xl-3 col-md-6 col-12">
+                              <a href="details.html">
+                                   <div class="project-card">
+                                        <div class="project-overlay"></div>
+                                        <img class="project-image" src="images/project/05.jpg">
+                                        <div class="project-details fadeIn-bottom">
+                                             <h3 class="project-title">MJ Plaza</h3>
+                                             <p class="project-text">Baridhara</p>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+
+                         <div class="col-xl-3 col-md-6 col-12">
+                              <a href="details.html">
+                                   <div class="project-card">
+                                        <div class="project-overlay"></div>
+                                        <img class="project-image" src="images/project/07.jpg">
+                                        <div class="project-details fadeIn-bottom">
+                                             <h3 class="project-title">Rahman Villa</h3>
+                                             <p class="project-text">Banani</p>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+
+                         <div class="col-xl-3 col-md-6 col-12">
+                              <a href="details.html">
+                                   <div class="project-card">
+                                        <div class="project-overlay"></div>
+                                        <img class="project-image" src="images/project/11.jpg">
+                                        <div class="project-details fadeIn-bottom">
+                                             <h3 class="project-title">Asian Plaza</h3>
+                                             <p class="project-text">Gulshan</p>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+
+                         <div class="col-xl-3 col-md-6 col-12">
+                              <a href="details.html">
+                                   <div class="project-card">
+                                        <div class="project-overlay"></div>
+                                        <img class="project-image" src="images/project/06.jpg">
+                                        <div class="project-details fadeIn-bottom">
+                                             <h3 class="project-title">Artisan Tower</h3>
+                                             <p class="project-text">Banasree</p>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+
+                         <div class="col-xl-3 col-md-6 col-12">
+                              <a href="details.html">
+                                   <div class="project-card">
+                                        <div class="project-overlay"></div>
+                                        <img class="project-image" src="images/project/09.jpg">
+                                        <div class="project-details fadeIn-bottom">
+                                             <h3 class="project-title">Simon Villa</h3>
+                                             <p class="project-text">Kalshi</p>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+
+                         <div class="col-xl-3 col-md-6 col-12">
+                              <a href="details.html">
+                                   <div class="project-card">
+                                        <div class="project-overlay"></div>
+                                        <img class="project-image" src="images/project/08.jpg">
+                                        <div class="project-details fadeIn-bottom">
+                                             <h3 class="project-title">71 Villa</h3>
+                                             <p class="project-text">Gulshan</p>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+
+                         <div class="col-xl-3 col-md-6 col-12">
+                              <a href="details.html">
+                                   <div class="project-card">
+                                        <div class="project-overlay"></div>
+                                        <img class="project-image" src="images/project/19.jpg">
+                                        <div class="project-details fadeIn-bottom">
+                                             <h3 class="project-title">KAZ Villa</h3>
+                                             <p class="project-text">Badda</p>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+
+                    <div class="row" id="list-view">
+
+                         <div class="project-list">
+                              <div class="row">
+                                   <div class="col-12 col-md-4">
+                                        <img src="images/project/02.jpg" alt="project">
+                                   </div>
+                                   <div class="col-12 col-md-8">
+                                        <h3>Swiss Tower</h3>
+                                        <h5>Mirpur</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eaque vero amet
+                                             animi quo debitis quis a enim illum aperiam dolores aliquid earum fugit
+                                             neque fugiat omnis temporibus accusamus veritatis assumenda quibusdam
+                                             recusandae, facilis error! Nobis veritatis optio reprehenderit velit
+                                             incidunt autem pariatur animi doloremque atque, voluptas nemo, fugiat iste
+                                             ad, magni aliquam eum aut repudiandae. facilis error! Nobis veritatis optio
+                                             reprehenderit velitSapiente optio voluptate iusto facilis error! Nobis
+                                             natus. Recusandae eveniet ex odit nisi iste.voluptas nemo, fugiat iste
+                                             ad, magni aliquam eum aut repudiandae. Sapiente optio voluptate iusto
+                                             natus. Recusandae eveniet ex odit nisi iste...</p>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="project-list">
+                              <div class="row">
+                                   <div class="col-12 col-md-4">
+                                        <img src="images/project/05.jpg" alt="project">
+                                   </div>
+                                   <div class="col-12 col-md-8">
+                                        <h3>MJ Plaza</h3>
+                                        <h5>Baridhara</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eaque vero amet
+                                             animi quo debitis quis a enim illum aperiam dolores aliquid earum fugit
+                                             neque fugiat omnis temporibus accusamus veritatis assumenda quibusdam
+                                             recusandae, facilis error! Nobis veritatis optio reprehenderit velit
+                                             incidunt autem pariatur animi doloremque atque, voluptas nemo, fugiat iste
+                                             ad, magni aliquam eum aut repudiandae. facilis error! Nobis veritatis optio
+                                             reprehenderit velitSapiente optio voluptate iusto facilis error! Nobis
+                                             natus. Recusandae eveniet ex odit nisi iste.voluptas nemo, fugiat iste
+                                             ad, magni aliquam eum aut repudiandae. Sapiente optio voluptate iusto
+                                             natus. Recusandae eveniet ex odit nisi iste...</p>
+                                   </div>
+                              </div>
+                         </div>
+
+
+                         <div class="project-list">
+                              <div class="row">
+                                   <div class="col-12 col-md-4">
+                                        <img src="images/project/07.jpg" alt="project">
+                                   </div>
+                                   <div class="col-12 col-md-8">
+                                        <h3>Rahman Villa</h3>
+                                        <h5>Banani</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eaque vero amet
+                                             animi quo debitis quis a enim illum aperiam dolores aliquid earum fugit
+                                             neque fugiat omnis temporibus accusamus veritatis assumenda quibusdam
+                                             recusandae, facilis error! Nobis veritatis optio reprehenderit velit
+                                             incidunt autem pariatur animi doloremque atque, voluptas nemo, fugiat iste
+                                             ad, magni aliquam eum aut repudiandae. facilis error! Nobis veritatis optio
+                                             reprehenderit velitSapiente optio voluptate iusto facilis error! Nobis
+                                             natus. Recusandae eveniet ex odit nisi iste.voluptas nemo, fugiat iste
+                                             ad, magni aliquam eum aut repudiandae. Sapiente optio voluptate iusto
+                                             natus. Recusandae eveniet ex odit nisi iste...</p>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="project-list">
+                              <div class="row">
+                                   <div class="col-12 col-md-4">
+                                        <img src="images/project/11.jpg" alt="project">
+                                   </div>
+                                   <div class="col-12 col-md-8">
+                                        <h3>Asian Plaza</h3>
+                                        <h5>Gulshan</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eaque vero amet
+                                             animi quo debitis quis a enim illum aperiam dolores aliquid earum fugit
+                                             neque fugiat omnis temporibus accusamus veritatis assumenda quibusdam
+                                             recusandae, facilis error! Nobis veritatis optio reprehenderit velit
+                                             incidunt autem pariatur animi doloremque atque, voluptas nemo, fugiat iste
+                                             ad, magni aliquam eum aut repudiandae. facilis error! Nobis veritatis optio
+                                             reprehenderit velitSapiente optio voluptate iusto facilis error! Nobis
+                                             natus. Recusandae eveniet ex odit nisi iste.voluptas nemo, fugiat iste
+                                             ad, magni aliquam eum aut repudiandae. Sapiente optio voluptate iusto
+                                             natus. Recusandae eveniet ex odit nisi iste...</p>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="project-list">
+                              <div class="row">
+                                   <div class="col-12 col-md-4">
+                                        <img src="images/project/06.jpg" alt="project">
+                                   </div>
+                                   <div class="col-12 col-md-8">
+                                        <h3>Artisan Tower</h3>
+                                        <h5>Banasree</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eaque vero amet
+                                             animi quo debitis quis a enim illum aperiam dolores aliquid earum fugit
+                                             neque fugiat omnis temporibus accusamus veritatis assumenda quibusdam
+                                             recusandae, facilis error! Nobis veritatis optio reprehenderit velit
+                                             incidunt autem pariatur animi doloremque atque, voluptas nemo, fugiat iste
+                                             ad, magni aliquam eum aut repudiandae. facilis error! Nobis veritatis optio
+                                             reprehenderit velitSapiente optio voluptate iusto facilis error! Nobis
+                                             natus. Recusandae eveniet ex odit nisi iste.voluptas nemo, fugiat iste
+                                             ad, magni aliquam eum aut repudiandae. Sapiente optio voluptate iusto
+                                             natus. Recusandae eveniet ex odit nisi iste...</p>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="project-list">
+                              <div class="row">
+                                   <div class="col-12 col-md-4">
+                                        <img src="images/project/09.jpg" alt="project">
+                                   </div>
+                                   <div class="col-12 col-md-8">
+                                        <h3>Simon Villa</h3>
+                                        <h5>Kalshi</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eaque vero amet
+                                             animi quo debitis quis a enim illum aperiam dolores aliquid earum fugit
+                                             neque fugiat omnis temporibus accusamus veritatis assumenda quibusdam
+                                             recusandae, facilis error! Nobis veritatis optio reprehenderit velit
+                                             incidunt autem pariatur animi doloremque atque, voluptas nemo, fugiat iste
+                                             ad, magni aliquam eum aut repudiandae. facilis error! Nobis veritatis optio
+                                             reprehenderit velitSapiente optio voluptate iusto facilis error! Nobis
+                                             natus. Recusandae eveniet ex odit nisi iste.voluptas nemo, fugiat iste
+                                             ad, magni aliquam eum aut repudiandae. Sapiente optio voluptate iusto
+                                             natus. Recusandae eveniet ex odit nisi iste...</p>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="project-list">
+                              <div class="row">
+                                   <div class="col-12 col-md-4">
+                                        <img src="images/project/08.jpg" alt="project">
+                                   </div>
+                                   <div class="col-12 col-md-8">
+                                        <h3>71 Villa</h3>
+                                        <h5>Gulshan</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eaque vero amet
+                                             animi quo debitis quis a enim illum aperiam dolores aliquid earum fugit
+                                             neque fugiat omnis temporibus accusamus veritatis assumenda quibusdam
+                                             recusandae, facilis error! Nobis veritatis optio reprehenderit velit
+                                             incidunt autem pariatur animi doloremque atque, voluptas nemo, fugiat iste
+                                             ad, magni aliquam eum aut repudiandae. facilis error! Nobis veritatis optio
+                                             reprehenderit velitSapiente optio voluptate iusto facilis error! Nobis
+                                             natus. Recusandae eveniet ex odit nisi iste.voluptas nemo, fugiat iste
+                                             ad, magni aliquam eum aut repudiandae. Sapiente optio voluptate iusto
+                                             natus. Recusandae eveniet ex odit nisi iste...</p>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="project-list">
+                              <div class="row">
+                                   <div class="col-12 col-md-4">
+                                        <img src="images/project/19.jpg" alt="project">
+                                   </div>
+                                   <div class="col-12 col-md-8">
+                                        <h3>KAZ Villa</h3>
+                                        <h5>Badda</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eaque vero amet
+                                             animi quo debitis quis a enim illum aperiam dolores aliquid earum fugit
+                                             neque fugiat omnis temporibus accusamus veritatis assumenda quibusdam
+                                             recusandae, facilis error! Nobis veritatis optio reprehenderit velit
+                                             incidunt autem pariatur animi doloremque atque, voluptas nemo, fugiat iste
+                                             ad, magni aliquam eum aut repudiandae. facilis error! Nobis veritatis optio
+                                             reprehenderit velitSapiente optio voluptate iusto facilis error! Nobis
+                                             natus. Recusandae eveniet ex odit nisi iste.voluptas nemo, fugiat iste
+                                             ad, magni aliquam eum aut repudiandae. Sapiente optio voluptate iusto
+                                             natus. Recusandae eveniet ex odit nisi iste...</p>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div id="pagination-container"></div>
+
+                    </div>
+               </div>
+          </div>
+          <!-- Project section end -->
+
+     </section>
+     <!-- Main content end -->
+
+     <!-- Footer start -->
+     <div class="footer-section">
+          <footer>
+               <div class="container">
+
+                    <div class="footer-top">
+                         <div class="row">
+                              <div class=" col-md-4 col-12">
+                                   <h1>BYThemes</h1>
+                                   <p>Dhaka, Bangladesh</p>
+                                   <a href="mailto:demo@mail.com" class="mail-link">demo@mail.com</a>
+                              </div>
+                              <div class="col-md-8 col-12">
+                                   <div class="link-part">
+                                        <a href="index.html">Home</a>
+                                        <a href="about.html">About Us</a>
+                                        <a href="project.html">Projects</a>
+                                        <a href="contact.html">Contact Us</a>
+                                   </div>
+                                   <div class="social-icon">
+                                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                                   </div>
+                                   <a href="tel:+01234567">+88 01234 56789</a>
+                                   <br>
+                                   <a href="tel:+01234567">+88 01234 56789</a>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="footer-bottom">
+                    &copy;2022 CREATED BY BYVThemes.
+               </div>
+          </footer>
+
+     </div>
+     <!-- Footer End -->
+
+
+
+     <!-- Back to top button -->
+     <a id="scrollButton"></a>
+
+
+     <!-- bootstrap js -->
+     <script src="vendor/js/bootstrap.bundle.min.js"></script>
+     <!-- Jquery -->
+     <script src="vendor/js/jquery.min.js"></script>
+     <!-- Simple Pagination js -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.min.js"
+          integrity="sha512-9Dh726RTZVE1k5R1RNEzk1ex4AoRjxNMFKtZdcWaG2KUgjEmFYN3n17YLUrbHm47CRQB1mvVBHDFXrcnx/deDA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <!-- My custom script -->
+     <script src="js/script.js"></script>
+
+     <!-- Custom script for simple pagination -->
+     <script>
+          var items = $('#list-view .project-list');
+          var numItems = items.length;
+          var perPage = 3;
+
+          items.slice(perPage).hide();
+
+          $('#pagination-container').pagination({
+               items: numItems,
+               itemsOnPage: perPage,
+               prevText: "<",
+               nextText: ">",
+               onPageClick: function (pageNumber) {
+                    var showFrom = perPage * (pageNumber - 1);
+                    var showTo = showFrom + perPage;
+                    items.hide().slice(showFrom, showTo).show();
+               }
+          });
+     </script>
+</body>
+
+</html>

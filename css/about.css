@@ -1,0 +1,237 @@
+/* top section */
+.top-section {
+     background: linear-gradient(rgba(23, 55, 71, 0.5), rgba(23, 55, 71, 0.5)), url('../images/about/bg.jpg');
+     background-position: center;
+     background-size: 100% 100%;
+     height: 70vh;
+     display: flex;
+     justify-content: left;
+     align-items: end;
+}
+
+.top-section h1 {
+     align-items: left;
+}
+
+.top-section h1 {
+     position: absolute;
+     font-size: 3.5rem;
+     color: #fff;
+     font-weight: bold;
+     text-transform: uppercase;
+     text-align: left;
+     padding-left: 2rem;
+     padding-bottom: 2rem;
+}
+
+
+/* Mission section */
+.mission-section {
+     background: #CFD3D6;
+     padding: 3rem 0;
+}
+
+.dark-mode .mission-section {
+     background: #333;
+     color: #fff;
+     padding: 3rem 0;
+}
+
+.mission-section img {
+     height: 100%;
+     width: 100%;
+}
+
+.mission-section h1 {
+     font-weight: bold;
+     text-align: center;
+     margin-top: 1rem;
+}
+
+.mission-section p {
+     text-align: justify;
+}
+
+.mission-section .vision {
+     margin-top: 2.5rem;
+}
+
+/* Story section */
+.story-section {
+     margin-bottom: 3rem;
+     padding-top: 2rem;
+     background: #173747;
+     color: #fff;
+}
+
+.story-section h1 {
+     text-align: center;
+     font-weight: bold;
+     margin-bottom: 2rem;
+}
+
+.story-section .text-section p {
+     text-align: justify;
+}
+
+.story-section .text-section h3 {
+     font-weight: bold;
+     font-size: 2rem;
+     margin-top: 1rem;
+}
+
+.story-section .text-section h6 {
+     font-weight: bold;
+     font-size: 1.1rem;
+     text-transform: uppercase;
+     margin-bottom: 1rem;
+}
+
+.story-section img {
+     height: 100%;
+     width: 100%;
+     max-height: 500px;
+     max-width: 350px;
+}
+
+
+/* member section */
+.member-section {
+     margin-bottom: 2rem;
+}
+
+.member-section h1 {
+     margin-bottom: 2rem;
+     text-align: center;
+     font-weight: bold;
+     text-transform: uppercase;
+}
+
+.member-section .row {
+     padding: 2.5rem 0;
+}
+
+.member-section img {
+     height: 100%;
+     width: 100%;
+}
+
+.member-section .text-section {
+     margin-top: 10%;
+     max-width: 90%;
+     color: #324150;
+}
+
+.member-section .text-section h2 {
+     font-size: 3rem;
+     font-weight: bold;
+     text-transform: uppercase;
+}
+
+.member-section .text-section h5 {
+     font-size: 1.5rem;
+     font-weight: bold;
+}
+
+.member-section .text-section p {
+     opacity: .9;
+     font-size: 1rem;
+}
+
+.member-section .text-section a {
+     color: #324150;
+     cursor: pointer;
+     font-size: 1.5rem;
+     padding: 5px;
+}
+
+.member-section .text-section blockquote {
+     text-transform: uppercase;
+     font-size: 1.2rem;
+     padding: 5px 0;
+}
+
+.dark-mode .member-section .text-section,
+.dark-mode .member-section .text-section a {
+     color: #fff;
+}
+
+/* team section */
+.team-section {
+     padding: 3rem 0;
+}
+
+.team-section h1 {
+     font-size: 2.5rem;
+     font-weight: bold;
+     text-transform: uppercase;
+     text-align: center;
+     padding-bottom: 1rem;
+}
+
+.team-section img {
+     width: 99%;
+     height: fit-content;
+     max-height: 350px;
+     padding-right: 1rem;
+     padding-top: 1rem;
+}
+
+
+/* Media Query */
+@media only screen and (max-width: 991px) {
+     .top-section {
+          height: 50vh;
+     }
+
+     .project-section .project-details {
+          position: absolute;
+          padding: 1rem;
+          padding-bottom: 0;
+          width: 90%;
+          top: 80%;
+          opacity: 1;
+          background: rgba(23, 55, 71, 0.7);
+     }
+}
+
+@media only screen and (max-width: 480px) {
+     .story-section img {
+          max-width: 100%;
+     }
+
+     .member-section .text-section h2 {
+          font-size: 2rem;
+     }
+
+     .member-section .text-section h5 {
+          font-size: 1.1rem;
+     }
+
+     .member-section .text-section {
+          margin-top: 1.5rem;
+     }
+
+     .member-section img {
+          margin-top: 1rem;
+     }
+
+     .team-section img {
+          width: 100%;
+          padding-right: 0;
+     }
+
+     .member-section h1 {
+          margin-bottom: 0rem;
+     }
+
+     .top-section {
+          height: 30vh;
+     }
+
+     .top-section h1 {
+          font-size: 2rem;
+          padding-left: 1rem;
+          padding-bottom: 0rem;
+     }
+}
